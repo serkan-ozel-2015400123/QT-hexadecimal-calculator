@@ -1,0 +1,74 @@
+﻿
+Cmpe 230
+
+Documentation for project 3: Hexadecimal Calculator
+
+Name: Serkan Özel
+Id:2015400123
+
+
+
+
+
+
+
+
+
+
+Introduction:
+
+In this project I have written a qt based calculator. Qt is a c++ graphical user interface development environment and used widely. 
+
+Concepts:
+
+The calculator can:
+1. Work with 5 digit numbers
+2. Sum, subtract, multiply, divide 2 numbers
+3. Work in hexadecimal and decimal mode
+
+Compilation:
+
+	There should be .cpp files, .h files, a .ui file and a .pro file in supplied files. You can use qt creator and qmake.
+
+Qmake:
+
+	First, install qt on your system. Then for linux systems: 
+
+qmake calculator.pro
+make
+./calculator
+
+That’s it.
+
+User Interface & Workflow:
+Workflow:
+Select a mode.
+Enter a number up to 5 digits.
+Press an operator button.
+Enter second number.
+Press = button to calculate result.
+
+If you divide by zero or exceed the limit of the integer you get an error message box saying the situation and then you can continue.
+
+After pressing = button, number1, number2 and the operation will be resetted to 0,0,+ respectively.
+
+You can press clear if you typed wrong. It is like equal button, also it resets the output screen. 
+
+Once you changed the mode to hexadecimal by pressing change mode button, you can use hexadecimal digits and get result in hexadecimal form.
+
+Current operation is shown by a label: “Operation: +”
+
+
+You can close the program whenever you want by pressing the cross symbol top right. Then you need to do $./calculator again from the terminal.
+
+Difficulties:
+
+	Connect, signal, slot and subclassing demands a user to be get used to it. Once I get used to it, it became faster.
+
+Conclusion:
+
+	In this project I learned the code qt gui based programs and how qt works behind the scenes. I.e the connect system and event loop.
+
+
+
+ 
